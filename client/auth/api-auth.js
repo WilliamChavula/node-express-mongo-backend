@@ -4,7 +4,7 @@ const signin = async user => {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
-                'Content-Type': 'appliction/json',
+                'Content-Type': 'application/json',
             },
             credentials: 'include',
             body: JSON.stringify(user),

@@ -14,7 +14,6 @@ const signin = async (req, res) => {
                 .json({ error: "Email and password don't match" });
         }
         const token = jwt.sign({ _id: user._id }, config.jwtSecret);
-        console.log(token);
         res.cookie('t', token, { expiresIn: '1h' });
         return res.json({
             token,

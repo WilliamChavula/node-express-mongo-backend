@@ -76,4 +76,4 @@ const remove = async (params, credentials) => {
     }
 };
 
-export { create, read, update, remove };
+export { create, list, read, update, remove };

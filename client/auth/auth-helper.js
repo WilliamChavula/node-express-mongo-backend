@@ -1,6 +1,6 @@
 const jwt = require('express-jwt');
 
-function authenticate(hwt, cb) {
+function authenticate(jwt, cb) {
     if (typeof window !== 'undefined') {
         sessionStorage.setItem('jwt', JSON.stringify(jwt));
     }
